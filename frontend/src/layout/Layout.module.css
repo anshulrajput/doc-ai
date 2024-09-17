@@ -1,0 +1,26 @@
+.container {  display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Navbar"
+      "Page-Content";
+  }
+  
+.Navbar {
+    grid-area: Navbar;
+    height: 3.2em;
+    z-index: 2;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* background: blue; */
+}
+
+.Page-Content { 
+    grid-area: Page-Content; 
+    max-height: calc(100vh - 3.2em);
+    overflow-y: auto;
+    /* background: yellow; */
+}
+  

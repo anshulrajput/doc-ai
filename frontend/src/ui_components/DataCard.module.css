@@ -1,0 +1,6 @@
+.data-card {
+    height: 13rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(var(--primary-fill), var(--secondary-blue));
+    color: white;
+}

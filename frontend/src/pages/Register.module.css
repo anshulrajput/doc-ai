@@ -1,0 +1,17 @@
+.page{
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient( var(--secondary-blue), var(--primary-light-blue), var(--primary-fill));
+}
+
+.form-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.form-group.input-section{
+    width: 60%;
+}

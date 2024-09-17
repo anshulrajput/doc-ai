@@ -1,0 +1,72 @@
+:root {
+  /* definitions */
+  --primary-blue: #157AA5; /* --primary-green: #23b485; */
+  --primary-light-blue: #0d6efd;
+  --primary-black: #000000;
+
+  --secondary-blue: #0bb9a2; /* --secondary-green: #23b485; */
+  --secondary-green: #a1b70c;
+  --secondary-red: #e41937;
+
+  --neutral-grey-4: #38383d;
+  --neutral-grey-3: #666666;
+  --neutral-grey-2: #a3a6a8;
+  --neutral-grey-1: #f2f2f2;
+  --neutral-white: #ffffff;
+
+  /* app pallete */
+  --primary-fill: var(--primary-blue);
+  --secondary-fill: var(--primary-light-blue);
+  --neutral-fill: var(--neutral-white);
+  --body-background: var(--neutral-grey-1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#spinner-root{
+  position: fixed;
+  z-index: 99999;
+  height: 0;
+  width: 0;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.overlay{
+  content: '';
+  display: block;
+  position: fixed;
+  z-index: 99998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0,0,0,0.33); */
+}
+
+.spinner-border{
+  z-index: 99999;
+  position: fixed;
+  --bs-spinner-width: 3em;
+  --bs-spinner-height: 3em;
+}
+
+.primary-btn{
+  background: var(--secondary-blue);
+  border: var(--secondary-blue);
+}
+
+.react-pdf__Page__canvas {
+  margin: 0 auto;
+  /* width: 80% !important;
+  height: 100% !important; */
+}
